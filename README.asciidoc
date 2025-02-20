@@ -18,3 +18,9 @@ stage, and its changes are present in the live https://www.shlomifish.org/philos
 
 ~/apps/lynx-beta/bin/lynx https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/index.xhtml
 
+Previous discussion on similar issues which were fixed, but similar problems emerged
+again:
+
+https://src.fedoraproject.org/rpms/lynx/pull-request/4
+
+https://lists.nongnu.org/archive/html/lynx-dev/2022-06/msg00016.html
