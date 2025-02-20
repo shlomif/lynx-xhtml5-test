@@ -7,3 +7,9 @@ standalone XML tags that didn't have whitespace before the slash in the "/>".
 I set out to test this hypothesis. Based on src.xhtml (origly a copy of
 https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/
 ) I generated using generate.py 8 versions with all combinations of whitespace
+for "/>" and lynx-beta hides most of the text on all of them:
+
+https://github.com/shlomif/lynx-xhtml5-test/tree/master/dest-lynx-test
+
+I also wrote a simlar script to mutate the pages on my site under /philosophy/philosophy/
+to put a space before the slash in the "/>"
