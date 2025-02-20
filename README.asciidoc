@@ -1,4 +1,9 @@
 Hi Thorsten and everyone,
 
-based on your claim that the beta version of lynx has hidden most of the text of
-the XHTML 5 pages on shlomifish.org ,
+your claimed that the beta version of lynx has hidden most of the text of the
+XHTML 5 pages on shlomifish.org , because their markup was served with
+standalone XML tags that didn't have whitespace before the slash in the "/>".
+
+I set out to test this hypothesis. Based on src.xhtml (origly a copy of
+https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/
+) I generated using generate.py 8 versions with all combinations of whitespace
