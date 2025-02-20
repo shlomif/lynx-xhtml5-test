@@ -1,6 +1,6 @@
 Hi Thorsten and everyone,
 
-your claimed that the beta version of lynx has hidden most of the text of the
+you claimed that the beta version of lynx has hidden most of the text of the
 XHTML 5 pages on shlomifish.org , because their markup was served with
 standalone XML tags that didn't have whitespace before the slash in the "/>".
 
@@ -11,5 +11,10 @@ for "/>" and lynx-beta hides most of the text on all of them:
 
 https://github.com/shlomif/lynx-xhtml5-test/tree/master/dest-lynx-test
 
-I also wrote a simlar script to mutate the pages on my site under /philosophy/philosophy/
-to put a space before the slash in the "/>"
+I also wrote a similar script to mutate the pages on my site under /philosophy/philosophy/
+to put a space before the slash in the "/>" . It is currently invoked at every "make test"
+stage, and its changes are present in the live https://www.shlomifish.org/philosophy/philosophy/
+(I checked). the beta version of lynx still does not display most of the text for
+
+~/apps/lynx-beta/bin/lynx https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/index.xhtml
+
