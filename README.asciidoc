@@ -23,7 +23,11 @@ present in the live https://www.shlomifish.org/philosophy/philosophy/
 ~/apps/lynx-beta/bin/lynx https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/index.xhtml
 
 Moreover note that as far as I recall, the recommendation to prefix the trailing
-slash with space was intended for compatibility with
+slash with space was intended for compatibility with legacy www browsers that had not
+been adapted to XML or XHTML. If the page is served as
+“Content-Type: application/xml+xhtml” , then a compliant user agent should parse
+it as XML. Moreover, most of the pages on my site are validated as XHTML5
+using several validators, and firefox and chromium-browser usually handle them well.
 
 Previous discussion on similar issues which were fixed, but similar problems emerged
 again:
