@@ -2,6 +2,10 @@ Hi Thorsten and everyone,
 
 thanks for your reply.
 
+Summary: I "fix"ed part of my site and converted "/>" to " />" and it is still broken
+in lynx. Moreover, firefox and chromium (and other browsers) handled the pages
+there fine (and still do).
+
 You claimed that the beta version of lynx has hidden most of the text of the
 problematic XHTML 5 pages on shlomifish.org , because their markup was served
 with standalone XML tags that didn't have whitespace before the slash in the
