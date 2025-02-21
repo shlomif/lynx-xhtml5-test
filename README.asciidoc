@@ -8,8 +8,9 @@ with standalone XML tags that didn't have whitespace before the slash in the
 "/>".
 
 I set out to test this hypothesis. Based on src.xhtml (originally a copy of
+the page
 https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/
-) I generated using generate.py 8 versions with all combinations of whitespace
+) I generated, using generate.py, 8 versions with all combinations of whitespace
 for "/>" . Turns out lynx-beta erratically hides most of the text on all of them:
 
 https://github.com/shlomif/lynx-xhtml5-test/tree/master/dest-lynx-test
@@ -39,8 +40,8 @@ using several validators, and firefox and chromium-browser usually handle them w
 Stripping the whitespace in question is done by the X/HTML minifier I use, and I might
 opt to disable or undo it somehow if it increases compatibility with lynx and other browsers.
 
-Nevertheless https://caniuse.com/xhtml and https://knowyourmeme.com/memes/what-year-is-it and
-adding whitespace still doesn't seem to help here.
+Nevertheless: https://caniuse.com/xhtml and https://knowyourmeme.com/memes/what-year-is-it and
+adding whitespace still doesn't seem to help here. I think lynx is doing the wrong thing.
 
 )
 
@@ -54,3 +55,4 @@ https://lists.nongnu.org/archive/html/lynx-dev/2022-06/msg00016.html
 Here is a screen recording of lynx beta on fedora 41:
 
 https://github.com/shlomif/lynx-xhtml5-test/blob/master/termtosvg-lynx-beta-on-fedora41.svg
+
