@@ -7,7 +7,7 @@ problematic XHTML 5 pages on shlomifish.org , because their markup was served
 with standalone XML tags that didn't have whitespace before the slash in the
 "/>".
 
-I set out to test this hypothesis. Based on src.xhtml (origly a copy of
+I set out to test this hypothesis. Based on src.xhtml (originally a copy of
 https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/
 ) I generated using generate.py 8 versions with all combinations of whitespace
 for "/>" . Turns out lynx-beta erratically hides most of the text on all of them:
@@ -18,12 +18,12 @@ I also wrote a similar script to mutate the markup of the XHTML pages (those end
 with “.html” or “.xhtml” ) on my site under /philosophy/philosophy/
 to put a space before the slash in the "/>" . It is currently invoked at every "make test"
 stage, and its changes are
-present in the live https://www.shlomifish.org/philosophy/philosophy/
+present in the live pages under https://www.shlomifish.org/philosophy/philosophy/
 (I checked). the beta version of lynx still does not display most of the text for
 
 ~/apps/lynx-beta/bin/lynx https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/index.xhtml
 
-( This is given your request for me to "fix" the pages of my site and given I
+( This was done given your request for me to "fix" the pages of my site and given I
 do not wish to risk potentially breaking the rest of the site with such a
 crudely-implemented change for now. )
 
@@ -40,7 +40,7 @@ Stripping the whitespace in question is done by the X/HTML minifier I use, and I
 opt to disable or undo it somehow if it increases compatibility with lynx and other browsers.
 
 Nevertheless https://caniuse.com/xhtml and https://knowyourmeme.com/memes/what-year-is-it and
-it still doesn't seem to help here.
+adding whitespace still doesn't seem to help here.
 
 )
 
