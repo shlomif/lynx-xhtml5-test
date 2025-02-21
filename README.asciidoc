@@ -14,13 +14,17 @@ for "/>" . Turns out lynx-beta erratically hides most of the text on all of them
 
 https://github.com/shlomif/lynx-xhtml5-test/tree/master/dest-lynx-test
 
-I also wrote a similar script to mutate the pages on my site under /philosophy/philosophy/
+I also wrote a similar script to mutate the markup of the XHTML pages (those ending
+with “.html” or “.xhtml” ) on my site under /philosophy/philosophy/
 to put a space before the slash in the "/>" . It is currently invoked at every "make test"
 stage, and its changes are
 present in the live https://www.shlomifish.org/philosophy/philosophy/
 (I checked). the beta version of lynx still does not display most of the text for
 
 ~/apps/lynx-beta/bin/lynx https://www.shlomifish.org/philosophy/philosophy/putting-cards-on-the-table-2019-2020/index.xhtml
+
+( This is given your request for me to "fix my site" and given I do not wish to risk breaking
+the rest of the site with such a crudely-implemented change for now.)
 
 Moreover note that as far as I recall, the recommendation to prefix the trailing
 slash with space was intended for compatibility with legacy www browsers that had not
