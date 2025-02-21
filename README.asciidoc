@@ -34,6 +34,16 @@ been adapted to XML or XHTML. If the page is served as
 it as XML. Moreover, most of the pages on my site are validated as XHTML5
 using several validators, and firefox and chromium-browser usually handle them well.
 
+(
+
+Stripping the whitespace in question is done by the X/HTML minifier I use, and I might
+opt to disable or undo it somehow if it increases compatibility with lynx and other browsers.
+
+Nevertheless https://caniuse.com/xhtml and https://knowyourmeme.com/memes/what-year-is-it and
+it still doesn't seem to help here.
+
+)
+
 Previous discussion on similar issues which were fixed, but similar problems emerged
 again:
 
